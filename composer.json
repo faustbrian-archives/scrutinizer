@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/scrutinizer-php-client",
     "description": "A Scrutinizer Client for PHP",
-    "keywords": ["api", "faustbrian", "faustbrian-scrutinizer", "scrutinizer", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "scrutinizer", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
