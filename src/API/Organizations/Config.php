@@ -12,8 +12,8 @@
 namespace BrianFaust\Scrutinizer\API\Organizations;
 
 use BrianFaust\Http\HttpResponse;
-use BrianFaust\Scrutinizer\API\AbstractAPI;
 use BrianFaust\Scrutinizer\Models\Config;
+use BrianFaust\Scrutinizer\API\AbstractAPI;
 
 class Config extends AbstractAPI
 {
