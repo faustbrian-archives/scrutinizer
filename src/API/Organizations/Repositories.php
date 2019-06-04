@@ -5,17 +5,17 @@ declare(strict_types=1);
 /*
  * This file is part of Scrutinizer PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Scrutinizer\API\Organizations;
+namespace Plients\Scrutinizer\API\Organizations;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Scrutinizer\API\AbstractAPI;
-use BrianFaust\Scrutinizer\Models\Repository;
+use Plients\Http\HttpResponse;
+use Plients\Scrutinizer\API\AbstractAPI;
+use Plients\Scrutinizer\Models\Repository;
 
 class Repositories extends AbstractAPI
 {
@@ -23,7 +23,7 @@ class Repositories extends AbstractAPI
      * @param string $organization
      * @param array  $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function all(string $organization, array $parameters = []): HttpResponse
     {
@@ -47,7 +47,7 @@ class Repositories extends AbstractAPI
      * @param string $repo
      * @param string $type
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function remove(string $organization, string $username, string $repo, string $type): HttpResponse
     {

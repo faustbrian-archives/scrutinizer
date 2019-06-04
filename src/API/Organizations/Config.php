@@ -5,24 +5,24 @@ declare(strict_types=1);
 /*
  * This file is part of Scrutinizer PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Scrutinizer\API\Organizations;
+namespace Plients\Scrutinizer\API\Organizations;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Scrutinizer\API\AbstractAPI;
-use BrianFaust\Scrutinizer\Models\Config;
+use Plients\Http\HttpResponse;
+use Plients\Scrutinizer\API\AbstractAPI;
+use Plients\Scrutinizer\Models\Config;
 
 class Config extends AbstractAPI
 {
     /**
      * @param string $organization
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function details(string $organization): HttpResponse
     {

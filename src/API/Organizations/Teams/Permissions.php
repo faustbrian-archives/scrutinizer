@@ -5,16 +5,16 @@ declare(strict_types=1);
 /*
  * This file is part of Scrutinizer PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Scrutinizer\API\Organizations\Teams;
+namespace Plients\Scrutinizer\API\Organizations\Teams;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Scrutinizer\API\AbstractAPI;
+use Plients\Http\HttpResponse;
+use Plients\Scrutinizer\API\AbstractAPI;
 
 class Permissions extends AbstractAPI
 {
@@ -22,7 +22,7 @@ class Permissions extends AbstractAPI
      * @param string $organization
      * @param string $team
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function all(string $organization, string $team): HttpResponse
     {
@@ -37,7 +37,7 @@ class Permissions extends AbstractAPI
      * @param string $access
      * @param string $type
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function add(string $organization, string $team, string $username, string $repo, string $access, string $type): HttpResponse
     {
@@ -55,7 +55,7 @@ class Permissions extends AbstractAPI
      * @param string $repo
      * @param string $type
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function remove(string $slug, string $team, string $username, string $repo, string $type): HttpResponse
     {
